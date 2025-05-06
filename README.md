@@ -1,22 +1,39 @@
-# Mobile Development: Kotlin/Android Studio Calculator Application 
-This project is a Statistics Calculator built using Kotlin and developed in Android Studio. It showcases key features of mobile development, providing a user-friendly interface to perform various statistical calculations.
+# Kotlin/Android Studio Statistics Calculator
 
-The project was developed as part of the Mobile Development course at the University of Wisconsin–Eau Claire for the Computer Science major. Through this application, students gained hands-on experience with Kotlin programming and Android application development, focusing on mobile UI design, functionality, and Kotlin's powerful language features.
-***
-## Invalid Input
-|Input|Example|Description|
-|-----|-------|-----------|
-|#√#|2√16   |Must do multiplication of a square root separately.|
-|#Xtr(%)|√Xtr(%), 4Xtr(%)|This button only works isolated, not in pair with other buttons.|
-|#^#^#|2^3^2|Can not nest exponents.|
-|√√#|√√16|Can not nest square roots.|
-|{√, #^}|{√4, 2^5}|Can not include exponents or square roots in dataset input.|
+This project is a **Statistics Calculator** developed using **Kotlin** in **Android Studio**. It demonstrates key concepts in mobile development, offering a user-friendly interface for performing various statistical computations.
 
-## Calculator Functions
-|Button|Input|Function|
-|------|-----|--------|
-|Stat| |Provides mean, max, min, median, trimmed mean, and summation of dataset values.|
-|^|#|Raises previous number to the power of proceeding number.|
-|√|#|Provides square root of proceeding number.|
-|Xtr(%)|#|Given a percentage (#), calculates trimmed mean on dataset values to show in Stat|
-|-|#|Allowed to use for negative number calculations.|
+Developed as part of the **Mobile Development** course in the **Computer Science** program at the **University of Wisconsin–Eau Claire**, this project gave students hands-on experience with:
+
+- Kotlin programming
+- Android app development
+- Mobile UI design
+- Functionality integration
+- Kotlin’s advanced language features
+
+---
+
+## ❗ Invalid Input Rules
+
+| Input Pattern | Example     | Description                                                                 |
+|---------------|-------------|-----------------------------------------------------------------------------|
+| `#√#`         | `2√16`      | Square roots must be applied separately from other operations.              |
+| `#Xtr(%)`     | `√Xtr(%)`, `4Xtr(%)` | The `Xtr(%)` button must be used in isolation, not with other operators.  |
+| `#^#^#`       | `2^3^2`     | Nested exponents are not supported.                                        |
+| `√√#`         | `√√16`      | Nested square roots are not supported.                                     |
+| `{√, #^}`     | `{√4, 2^5}` | Exponents and square roots are not allowed in dataset input for statistics.|
+
+---
+
+## 🧮 Calculator Functions
+
+| Button   | Input | Function                                                                 |
+|----------|-------|--------------------------------------------------------------------------|
+| `Stat`   |       | Calculates **mean**, **max**, **min**, **median**, **trimmed mean**, and **sum** of dataset values. |
+| `^`      | `#`   | Raises the previous number to the power of the following number.         |
+| `√`      | `#`   | Computes the square root of the following number.                        |
+| `Xtr(%)` | `#`   | Calculates a **trimmed mean** using the given percentage.                |
+| `-`      | `#`   | Supports negative number input and operations.                           |
+
+---
+
+This project showcases a robust example of mobile-first, statistics-focused application development with Kotlin and Android Studio.
